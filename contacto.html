@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio Web - Manu</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="titulo-portafolio">Mi Portafolio Web</div>
+  <nav class="menu">
+    <a href="index.html" class="btn">Inicio</a>
+    <div class="grupobtn">
+      <a href="servicios.html" class="btn">Servicios <i class="fas fa-caret-down"></i></a>
+      <div class="submenu">
+        <a href="fotografia.html" class="btn2">Fotografía</a>
+        <a href="diseno-web.html" class="btn2">Diseño Web</a>
+        <a href="diseno-editorial.html" class="btn2">Diseño Editorial</a>
+        <a href="diseno-de-redes.html" class="btn2">Redes Sociales</a>
+        <a href="diseno-de-impresion.html" class="btn2">Impresión</a>
+      </div>
+    </div>
+    <a href="contacto.html" class="btn">Sobre mí</a>
+  </nav>
+</header>
+
+
+<main>
+  <!-- SECCIÓN SOBRE MÍ -->
+  <section class="sobre-mi">
+    <div class="sobre-mi-contenido">
+      <img src="sobre mi/slide4.jpg" alt="Foto de Manu">
+      <h2>Sobre mí</h2>
+      <p><p><strong>Soy Manu</strong>, diseñadora gráfica, pero sobre todo, una mujer que encontró en el diseño una forma de expresar su ser.</p>
+
+<p>Para mí, <strong>diseñar es una manera de amar</strong>: de escuchar con atención, de cuidar los detalles, de conectar con la historia del otro y traducirla en formas, colores y mensajes que hablen con verdad.<br>
+Es mi lenguaje, mi refugio y mi manera de dejar huella.</p>
+
+<p>Cada proyecto que toco tiene un pedacito de mí. Porque no creo en diseñar en automático, sino en crear desde lo profundo, con intención, con alma.<br>
+Ya sea una marca, una pieza para redes, un diseño editorial o una causa social, <strong>uso el diseño como un puente entre lo que sentimos y lo que queremos decir</strong>.</p>
+
+<p>Trabajo con personas y proyectos que tienen algo real que contar. Emprendedores, fundaciones, ideas con propósito.<br>
+Y me encanta estar ahí, justo en ese punto donde nace la comunicación visual con sentido.</p>
+
+<p><strong>El diseño es mi forma de amar, de mirar el mundo y de construir algo bello con los demás.</strong></p>
+
+      <div class="redes">
+        <a href="https://www.instagram.com/_diaa4z/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/diaaazmandreaaa" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/mAnuUuu__4" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.tiktok.com/@ma4nu_0" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section id="contacto" class="seccion contacto">
+    <h2>Contáctame</h2>
+    <p class="intro-contacto">¿Te gustaría trabajar conmigo o tienes alguna pregunta? Estoy feliz de leerte.</p>
+
+    <form action="https://formsubmit.co/espinomad06@gmail.com" method="POST" class="formulario-contacto">
+      <input type="text" name="Nombre" placeholder="Tu nombre" required />
+      <input type="email" name="Email" placeholder="Tu correo" required />
+      <input type="text" name="Telefono" placeholder="Tu número" required />
+      <textarea name="Mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <input type="hidden" name="_next" value="gracias.html" />
+      <input type="hidden" name="_captcha" value="false" />
+      <button type="submit" class="boton">Enviar mensaje</button>
+    </form>
+
+    <div class="redes-sociales contacto-iconos">
+      <a href="https://wa.me/573212617345" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.instagram.com/_diaa4z/" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Manu - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

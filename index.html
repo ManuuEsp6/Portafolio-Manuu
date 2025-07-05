@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio Web - Manu</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="titulo-portafolio">Mi Portafolio Web</div>
+  <nav class="menu">
+    <a href="index.html" class="btn">Inicio</a>
+    <div class="grupobtn">
+      <a href="servicios.html" class="btn">Servicios <i class="fas fa-caret-down"></i></a>
+      <div class="submenu">
+        <a href="fotografia.html" class="btn2">Fotografía</a>
+        <a href="diseno-web.html" class="btn2">Diseño Web</a>
+        <a href="diseno-editorial.html" class="btn2">Diseño Editorial</a>
+        <a href="diseno-de-redes.html" class="btn2">Redes Sociales</a>
+        <a href="diseno-de-impresion.html" class="btn2">Impresión</a>
+      </div>
+    </div>
+    <a href="contacto.html" class="btn">Sobre mí</a>
+  </nav>
+</header>
+
+<!-- HERO CON CARRUSEL Y TEXTO AL LADO -->
+<section class="hero">
+  <div class="hero-container">
+    <div class="carrusel">
+      <img id="slide" src="slide2.jpg" >
+    </div>
+    <div class="texto">
+      <h1>¡Hola! Soy Manu</h1>
+      <p>Diseñadora gráfica apasionada por contar historias visuales que conectan y transforman.</p>
+      <div class="botones">
+        <a href="contacto.html" class="boton">Contáctame</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO TRABAJO / VALORES -->
+<section class="section-box valores-seccion">
+  <h2>¿Cómo trabajo?</h2>
+  <div class="valores-grid">
+    <div class="valor">
+      <div class="emoji">🎯</div>
+      <h3>Precisión</h3>
+      <p>Cada diseño es pensado para comunicar con intención y claridad.</p>
+    </div>
+    <div class="valor">
+      <div class="emoji">✨</div>
+      <h3>Creatividad</h3>
+      <p>Busco que cada proyecto tenga un sello único, auténtico y memorable.</p>
+    </div>
+    <div class="valor">
+      <div class="emoji">⏱️</div>
+      <h3>Compromiso</h3>
+      <p>Respeto los tiempos de entrega y acompaño cada parte del proceso.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS DESTACADOS (PREVIEW) -->
+<section class="section-box">
+  <h2>Algunos de mis servicios</h2>
+  <div class="galeria">
+    <div class="proyecto">
+      <img src="Fotografia/FOTO4.JPG" alt="Fotografía">
+      <h3>Fotografía Profesional</h3>
+    </div>
+    <div class="proyecto">
+      <img src="Redes sociales/redes6.png" alt="Diseño redes sociales">
+      <h3>Diseño para Redes Sociales</h3>
+    </div>
+    <div class="proyecto">
+      <img src="editorial/editorial8.png" alt="Diseño editorial">
+      <h3>Diseño Editorial</h3>
+    </div>
+    <div class="botones" style="margin-top: 30px; text-align: center;">
+  <a href="servicios.html" class="boton">Ver más servicios</a>
+</div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section-box testimonios">
+  <h2>Testimonios</h2>
+  <div class="testimonio">
+    <p>"Trabajar con Manu fue increíble. Su creatividad y dedicación superaron mis expectativas."</p>
+    <strong>- Cliente feliz</strong>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section-box cta">
+  <h2>¿Trabajamos juntos?</h2>
+  <p>Estoy lista para nuevos retos creativos. ¡Contáctame y creemos algo genial!</p>
+  <div class="botones">
+    <a href="contacto.html" class="boton whatsapp">Escríbeme</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 Manu - Todos los derechos reservados</p>
+</footer>
+
+<!-- CARRUSEL JS -->
+<script>
+  const imagenes = ["img/slide1.jpg", "img/slide2.jpg", "img/slide3.jpg", "img/slide4.jpg" ];
+  let index = 0;
+  const slide = document.getElementById("slide");
+
+  setInterval(() => {
+    index = (index + 1) % imagenes.length;
+    slide.src = imagenes[index];
+  }, 4000);
+</script>
+
+</body>
+</html>
